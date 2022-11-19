@@ -1,5 +1,6 @@
 def find_the_average(array):
-    return [sum(array)/len(array) for elem in array]
+    average = sum(array)/len(array)
+    return sum(elem>average for elem in array)
 
 
 def try_to_convert_elements(array):
